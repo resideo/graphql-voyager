@@ -1,8 +1,6 @@
 import * as React from 'react';
 import * as classNames from 'classnames';
 
-import './Argument.css';
-
 import Markdown from '../utils/Markdown';
 import WrappedTypeName from './WrappedTypeName';
 

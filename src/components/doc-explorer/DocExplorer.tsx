@@ -8,8 +8,6 @@ import TypeInfoPopover from './TypeInfoPopover';
 import OtherSearchResults from './OtherSearchResults';
 import SearchBox from '../utils/SearchBox';
 
-import './DocExplorer.css';
-
 interface DocExplorerProps {
   typeGraph: any;
   selectedTypeID: string;

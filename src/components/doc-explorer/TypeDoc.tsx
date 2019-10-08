@@ -2,8 +2,6 @@ import * as _ from 'lodash';
 import * as React from 'react';
 import * as classNames from 'classnames';
 
-import './TypeDoc.css';
-
 import { SimplifiedTypeWithIDs } from '../../introspection/types';
 import { isMatch, highlightTerm } from '../../utils';
 

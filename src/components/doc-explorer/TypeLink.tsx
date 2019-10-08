@@ -3,8 +3,6 @@ import * as classNames from 'classnames';
 import { isBuiltInScalarType, isScalarType, isInputObjectType } from '../../introspection';
 import { highlightTerm } from '../../utils';
 
-import './TypeLink.css';
-
 interface TypeLinkProps {
   type: {
     name: string;

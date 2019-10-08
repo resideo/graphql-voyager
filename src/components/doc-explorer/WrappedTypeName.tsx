@@ -1,7 +1,6 @@
 import * as React from 'react';
 import Tooltip from '@material-ui/core/Tooltip';
 import IconButton from '@material-ui/core/IconButton';
-import './WrappedTypeName.css';
 
 import { stringifyWrappers } from '../../introspection/';
 import TypeLink from './TypeLink';

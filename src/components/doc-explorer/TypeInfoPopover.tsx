@@ -1,8 +1,6 @@
 import * as React from 'react';
 import * as classNames from 'classnames';
 
-import './TypeInfoPopover.css';
-
 import CloseIcon from '../icons/close-black.svg';
 import IconButton from '@material-ui/core/IconButton';
 

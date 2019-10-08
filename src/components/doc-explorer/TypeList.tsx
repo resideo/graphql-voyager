@@ -3,8 +3,6 @@ import * as React from 'react';
 import * as classNames from 'classnames';
 import { isMatch } from '../../utils';
 
-import './TypeList.css';
-
 import TypeLink from './TypeLink';
 import Description from './Description';
 import FocusTypeButton from './FocusTypeButton';
@@ -43,7 +41,7 @@ export default class TypeList extends React.Component<TypeListProps> {
 
       return (
         <div key={type.id} className={classNames('typelist-item', className)}>
-          <TypeLink type={type} onClick={onTypeLink} filter={filter}/>
+          <TypeLink type={type} onClick={onTypeLink} filter={filter} />
           <FocusTypeButton onClick={() => onFocusType(type)} />
           <Description className="-doc-type" text={type.description} />
         </div>
