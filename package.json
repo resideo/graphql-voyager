@@ -1,7 +1,16 @@
 {
-  "name": "graphql-voyager",
+  "name": "@resideo/graphql-voyager",
   "version": "1.0.0-rc.27",
   "description": "GraphQL introspection viewer",
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@github.com:resideo/graphql-voyager.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/",
+    "access": "restricted"
+  },
+  "private": false,
   "main": "dist/voyager.lib.js",
   "types": "typings/index.d.ts",
   "scripts": {
@@ -13,6 +22,7 @@
     "bundle:lib": "webpack --env.lib --mode=production --config build/webpack.js",
     "bundle": "npm run bundle:lib && npm run bundle:standalone",
     "compile:middleware": "tsc -d src/middleware/index.ts --outDir middleware --lib ES6,DOM,esnext.asynciterable",
+    "build": "yarn build:release",
     "build:release": "npm run bundle && npm run compile:middleware && npm run declarations",
     "build:demo": "npm run clean:demo && NODE_ENV=production webpack -p --config build/webpack.demo.js",
     "deploy": "deploy-to-gh-pages --local --update demo-dist",
@@ -20,7 +30,6 @@
     "prettier": "prettier --write \"{,!(node_modules)/**/}*.{ts,tsx}\"",
     "declarations": "tsc --emitDeclarationOnly -p tsconfig.lib.json"
   },
-  "license": "MIT",
   "devDependencies": {
     "@babel/core": "7.4.3",
     "@babel/plugin-transform-arrow-functions": "7.2.0",
@@ -79,9 +88,5 @@
     "prop-types": "^15.7.2",
     "svg-pan-zoom": "^3.6.0",
     "viz.js": "2.1.2"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/APIs-guru/graphql-voyager.git"
   }
 }
