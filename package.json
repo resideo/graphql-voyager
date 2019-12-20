@@ -1,6 +1,6 @@
 {
   "name": "@resideo/graphql-voyager",
-  "version": "1.0.0-rc.28.local",
+  "version": "1.0.1-rc.28.local",
   "description": "GraphQL introspection viewer",
   "repository": {
     "type": "git",
